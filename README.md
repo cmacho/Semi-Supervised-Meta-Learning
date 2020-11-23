@@ -2,7 +2,7 @@
 
 This repository contains the code for my project on Semi-Supervised Meta Learning for the Stanford class CS330: Deep Multi-Task and Meta Learning.
 
-The projet report, containing a detailed description of the project is [here](report).
+The projet report, containing a detailed description of the project and its results is [here](project_report.pdf).
 
 The implementation of Constrained DeepCluster is here: [Constrained DeepCluster](https://github.com/cmacho/deepcluster)
 
