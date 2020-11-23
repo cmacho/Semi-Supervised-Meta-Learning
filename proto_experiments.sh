@@ -4,6 +4,8 @@ LABELS="cluster_labels_20_partitions/cluster_labels.npy"
 
 FOLDER="proto_unsupervised"
 
+mkdir -p ${FOLDER}
+
 python train_proto.py --logdir ${FOLDER} --train_data_mode unsupervised \
 --file_name_cluster_labels ${LABELS} --test_on_validation_set  \
 --name_test_output val_output_1_shot --test_iterations 5000
@@ -37,6 +39,8 @@ python train_proto.py --logdir ${FOLDER} --test_only \
 --name_test_output test_output_50_shot --test_iterations 1000 --k_shot 50
 
 FOLDER="proto_supervised"
+
+mkdir -p ${FOLDER}
 
 python train_proto.py --logdir ${FOLDER} --train_data_mode small_number \
 --file_name_cluster_labels ${LABELS} --test_on_validation_set  \
