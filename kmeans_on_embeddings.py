@@ -16,6 +16,12 @@ def parse_args():
     parser.add_argument("--clustering", type=str, choices=['kmeans', 'constrained_kmeans'], help="which clustering algorithm to use")
     parser.add_argument("--file_name_embedding", type=str, default="embedding.npy", help="file name for embedding that"
                                                                                          "is used for (unconstrained) kmeans")
+    parser.add_argument("--file_name_embedding_unlabeled", type=str, default="embedding_unlabeled.npy", help="file name for embedding "
+                                                                                                             "of unlabeled images that"
+                                                                                                             "is used for constrained kmeans")
+    parser.add_argument("--file_name_embedding_labeled", type=str, default="embedding_labeled.npy", help="file name for embedding "
+                                                                                                             "of labeled imagesthat"
+                                                                                                             "is used for constrained kmeans")
     return parser.parse_args()
 
 
@@ -24,8 +30,8 @@ args = parse_args()
 if args.clustering == "kmeans":
     embedding = np.load(args.file_name_embedding)
 elif args.clustering == "constrained_kmeans":
-    embedding_labeled = np.load("embedding_labeled.npy")
-    embedding_unlabeled = np.load("embedding_unlabeled.npy")
+    embedding_labeled = np.load(args.file_name_embedding_labeled)
+    embedding_unlabeled = np.load(args.file_name_embedding_unlabeled)
     print("shapes labeled unlabeled")
     print(embedding_labeled.shape)
     print(embedding_unlabeled.shape)
