@@ -1,6 +1,6 @@
 # Semi-Supervised Meta-Learning
 
-This repository contains code for my project on Semi-Supervised Meta Learning for the Stanford class CS330: Deep Multi-Task and Meta Learning.
+This repository contains code for my project on Semi-Supervised Meta Learning for Stanford CS330.
 
 The projet report, containing a detailed description of the project and its results is [here](project_report.pdf).
 
