@@ -27,7 +27,7 @@ FOLDER = "maml_mixed"
 mkdir -p ${FOLDER}
 
 python train_MAML.py --logdir ${FOLDER} --train_data_mode mixed \
---number_labeled_tasks_per_batch 2
+--number_labeled_tasks_per_batch 2 \
 --file_name_cluster_labels ${LABELS}  \
 --name_test_output test_output_1_shot
 
@@ -70,7 +70,7 @@ FOLDER="maml_constrained_constrained_mixed"
 mkdir -p ${FOLDER}
 
 python train_MAML.py --logdir ${FOLDER} --train_data_mode mixed \
---number_labeled_tasks_per_batch 2
+--number_labeled_tasks_per_batch 2 \
 --file_name_cluster_labels ${LABELS}  \
 --name_test_output test_output_1_shot
 
@@ -94,7 +94,7 @@ FOLDER="maml_constrained_standard_mixed"
 mkdir -p ${FOLDER}
 
 python train_MAML.py --logdir ${FOLDER} --train_data_mode mixed \
---number_labeled_tasks_per_batch 2
+--number_labeled_tasks_per_batch 2 \
 --file_name_cluster_labels ${LABELS}  \
 --name_test_output test_output_1_shot
 
@@ -117,7 +117,7 @@ FOLDER="maml_standard_then_constrained_mixed"
 mkdir -p ${FOLDER}
 
 python train_MAML.py --logdir ${FOLDER} --train_data_mode mixed \
---number_labeled_tasks_per_batch 2
+--number_labeled_tasks_per_batch 2 \
 --file_name_cluster_labels ${LABELS}  \
 --name_test_output test_output_1_shot
 
