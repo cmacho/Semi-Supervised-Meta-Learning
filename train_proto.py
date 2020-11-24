@@ -9,8 +9,7 @@ import matplotlib.pyplot as plt
 import re
 from functools import partial
 import argparse
-from proto_nets import ProtoNet
-from proto_nets import ProtoLoss
+from models import ProtoNet, ProtoLoss
 
 def parse_args():
     parser = argparse.ArgumentParser(description="tf implementation of MAML++")

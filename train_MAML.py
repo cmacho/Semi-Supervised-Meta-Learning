@@ -2,8 +2,7 @@
 import numpy as np
 import random
 import tensorflow as tf
-from MAML_plus_plus import MAMLpp
-from MAML import MAML
+from models import MAMLpp, MAML
 import meta_data_loader as mdl
 import os
 import datetime
